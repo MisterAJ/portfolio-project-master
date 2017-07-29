@@ -7,8 +7,8 @@ const favicon = require('serve-favicon');
 const logger = require('morgan');
 
 // Routes
-const mainController = require("./controllers/main");
-const quoteController = require("./controllers/quotes");
+const mainController = require("./routes/main");
+const quoteController = require("./routes/quotes");
 
 app.use('/', mainController);
 app.use('/quotes/', quoteController);
