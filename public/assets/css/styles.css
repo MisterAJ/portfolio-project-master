@@ -20,6 +20,11 @@ body {
     box-shadow: 1px 1px black;
 }
 
+.proj-1 {
+    background-color: green;
+    color: white;
+}
+
 /****** NAVBAR ******/
 
 .main_name {
