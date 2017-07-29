@@ -1,0 +1,47 @@
+doctype html
+html
+    link(rel='stylesheet', href='../assets/css/quoteStyles.css')
+    include includes/_head
+    link(href='https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,700,700italic', rel='stylesheet', type='text/css')
+    body
+        div
+            nav.navbar.navbar-default.navigation-clean
+                .container
+                    .navbar-header
+                        h1.main_name(href='#') A.J. Longstreet
+        .projects-clean
+            .container
+                .intro
+                    img.img-responsive.profile_pic(src='assets/img/profile_pic.jpg')
+        .container.messageContainer
+            #title
+                p Terminal
+            #window
+                .typedMessage
+        .proj-wrapper
+            .proj.proj-1
+                #quote-box
+                    p.quote You can do anything but not everything
+                    p.source
+                        | David Allen
+                        span.citation Making It All Work
+                        span.year 2009
+
+            .proj.proj-2
+                img(src='assets/img/building.jpg', alt='Building')
+                span.overlay
+                    a(href='#') View Project
+                    a(href='#') Source Code
+            .proj.proj-3
+                img(src='assets/img/loft.jpg', alt='Loft')
+                span.overlay
+                    a(href='#') View Project
+                    a(href='#') Source Code
+        script(src='assets/js/jquery.min.js')
+        script(src='assets/js/featherlight.min.js')
+        script(src='assets/js/typed.js')
+        script(src='../assets/js/quotes.js')
+        script(src='assets/js/mainPage.js')
+
+
+        include includes/_footer
