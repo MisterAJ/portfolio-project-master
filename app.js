@@ -2,16 +2,26 @@ const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
 const cookieParser = require('cookie-parser');
+const logger = require('morgan');
 const path = require('path');
 const favicon = require('serve-favicon');
-const logger = require('morgan');
 
 // Routes
 const mainController = require("./routes/main");
 const quoteController = require("./routes/quotes");
+const books = require('./routes/books');
+const index = require('./routes/index');
+const patrons = require('./routes/patrons');
+const loans = require('./routes/loans');
+const returns = require('./routes/returns');
 
 app.use('/', mainController);
 app.use('/quotes/', quoteController);
+app.use('/library/', index);
+app.use('/books/', books);
+app.use('/patrons/', patrons);
+app.use('/loans/', loans);
+app.use('/returns/', returns);
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -49,11 +59,5 @@ app.use(function (err, req, res, next) {
     res.status(err.status || 500);
     res.render('error');
 });
-
-const port = 3000;
-// Start App
-app.listen(port);
-console.log("App running on port: " + port);
-
 
 module.exports = app;

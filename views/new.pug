@@ -1,0 +1,12 @@
+extends layout
+
+block content
+    // New Item Conditionals
+    if book
+        include ../views/includes/_new_book
+
+    if patron
+        include ../views/includes/_new_patron
+
+    if loan
+        include ../views/includes/_new_loan

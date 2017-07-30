@@ -1,0 +1,24 @@
+extends layout
+
+block content
+    // All conditions
+    if books
+        include ../views/includes/_books
+
+    if overdueOrCheckedBook
+        include ../views/includes/_books
+
+    if bookDetail
+        include ../views/includes/_book_details
+
+    if patrons
+        include ../views/includes/_patrons
+
+    if patronDetail
+        include ../views/includes/_patron_details
+
+    if loans
+        include ../views/includes/_loans
+
+    if returns
+        include ../views/includes/_return_books

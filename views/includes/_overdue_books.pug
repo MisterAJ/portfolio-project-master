@@ -1,0 +1,17 @@
+h1 Overdue Books
+include _book_nav
+table
+    thead
+        tr
+            th Title
+            th Author
+            th Genre
+            th Year Released
+    tbody
+        for book in overdueBook
+            tr
+                td
+                    a(href='/books/' + book.dataValues.id) #{book.dataValues.title}
+                td #{book.dataValues.author}
+                td #{book.dataValues.genre}
+                td #{book.dataValues.return_by}
