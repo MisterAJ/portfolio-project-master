@@ -19,7 +19,7 @@ module.exports = function (sequelize, DataTypes) {
             allowNull: false,
             validate: {
                 notEmpty: true,
-                len: [2,15]
+                len: [2,40]
             }
         },
         genre: {

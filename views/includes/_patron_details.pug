@@ -3,7 +3,7 @@ h1 Patron: #{patronDetail.first_name} #{patronDetail.last_name}
 if errors
     include ./_errors
 
-form(action='/patrons/' + patronDetail.id method='post')
+form()
     p
         label(for='first_name') First Name -
         input#first_name(name='first_name' type='text', value=patronDetail.first_name)

@@ -16,13 +16,6 @@ const patrons = require('./routes/patrons');
 const loans = require('./routes/loans');
 const returns = require('./routes/returns');
 
-app.use('/', mainController);
-app.use('/quotes/', quoteController);
-app.use('/library/', index);
-app.use('/books/', books);
-app.use('/patrons/', patrons);
-app.use('/loans/', loans);
-app.use('/returns/', returns);
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -39,6 +32,13 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('public/scripts', express.static(path.join(__dirname, 'public/scripts')));
 app.use('public/stylesheets', express.static(path.join(__dirname, 'public/stylesheets')));
 
+app.use('/', mainController);
+app.use('/quotes/', quoteController);
+app.use('/library/', index);
+app.use('/books/', books);
+app.use('/patrons/', patrons);
+app.use('/loans/', loans);
+app.use('/returns/', returns);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {

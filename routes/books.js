@@ -1,9 +1,9 @@
 'use strict';
 const express = require('express');
 const router = express.Router();
-const Books = require("../models/index").Book;
-const Loans = require("../models/index").Loan;
-const Patrons = require("../models/index").Patron;
+const Books = require("../models").Book;
+const Loans = require("../models").Loan;
+const Patrons = require("../models").Patron;
 
 // Books
 
@@ -12,6 +12,7 @@ router.route('/new')
         res.render("new", {book: true, title: "New Book"})
     })
     .post([function (req, res, next) {
+        console.log(req.body);
         Books.create(req.body).then(function (book) {
             console.log(book);
             next();

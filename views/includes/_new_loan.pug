@@ -3,7 +3,7 @@ h1 New Loan
 if errors
     include ./_errors
 
-form(action='/loans/new' method='post')
+form()
     p
         label(for='book_id') Book
         select#book_id(name='book_id')

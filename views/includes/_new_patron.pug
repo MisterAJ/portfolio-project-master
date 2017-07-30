@@ -3,7 +3,7 @@ h1 New Patron
 if errors
     include ./_errors
 
-form(action='/patrons/new' method='post')
+form()
     p
         label(for='first_name') First Name
         input#first_name(name='first_name' type='text')

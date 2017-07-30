@@ -1,7 +1,7 @@
 body {
     padding: 50px;
     font: 18px "Garamond", serif;
-    background-color: lightgray;
+    background-color: #C1DAD6;
 }
 a {
     color: #019875;
@@ -96,4 +96,8 @@ input[type=text], select {
 
 .error {
     color: red;
+}
+
+.demo {
+    padding-left: 10px;
 }

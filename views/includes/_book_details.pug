@@ -3,7 +3,7 @@ h1 #{bookDetail.title}
 if errors
     include _errors
 
-form(action='/books/' + bookDetail.id method='post')
+form()
     p
         label(for='title') Title
         input#title(name='title', type='text',  value= bookDetail.title)

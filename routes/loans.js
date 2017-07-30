@@ -9,50 +9,25 @@ const Patrons = require("../models/index").Patron;
 
 router.route('/new')
     .get(function (req, res, next) {
-        Books.findAll({
-            include: {
-                model: Loans,
-                where: {
-                    $and: [{
-                        loaned_on: {
-                            $not: null
-                        }
-                    }, {
-                        returned_on: null
-                    }]
-                }
-            }
-        }).then(function (books) {
-            let idArray = [];
-            for (id of books) {
-                idArray.push(id.dataValues.id);
-            }
-            let p1 = Books.findAll({
-                where: {
-                    $not: {
-                        id: idArray
-                    }
-                },
-                order: [["title", "ASC"]]
-            });
-            let p2 = Patrons.findAll();
-            Promise.all([p1, p2]).then(function (values) {
-                "use strict";
-                const d = new Date();
-                const n = d.toISOString();
-                const returnDate = new Date();
-                returnDate.setDate(d.getDate() + 7);
-                res.render("new", {
-                    loan: true,
-                    date: n,
-                    returnDate: returnDate,
-                    books: values[0],
-                    patrons: values[1],
-                    title: "New Loan"
-                });
+        let p1 = Books.findAll({
+            order: [["title", "ASC"]]
+        });
+        let p2 = Patrons.findAll();
+        Promise.all([p1, p2]).then(function (values) {
+            "use strict";
+            const d = new Date();
+            const n = d.toISOString();
+            const returnDate = new Date();
+            returnDate.setDate(d.getDate() + 7);
+            res.render("new", {
+                loan: true,
+                date: n,
+                returnDate: returnDate,
+                books: values[0],
+                patrons: values[1],
+                title: "New Loan"
             });
         });
-
     })
     .post(function (req, res, next) {
         Loans.create(req.body)
