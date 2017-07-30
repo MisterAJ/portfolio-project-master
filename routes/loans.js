@@ -1,3 +1,4 @@
+'use strict';
 const express = require('express');
 const router = express.Router();
 const Books = require("../models/index").Book;
@@ -6,7 +7,6 @@ const Patrons = require("../models/index").Patron;
 
 // Loans
 
-// TODO - BUG - Fix Sequelize error - NULL id
 router.route('/new')
     .get(function (req, res, next) {
         Books.findAll({
