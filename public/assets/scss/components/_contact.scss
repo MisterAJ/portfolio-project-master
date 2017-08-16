@@ -1,0 +1,28 @@
+.contact-icon-container .icon {
+  font-size: 3em;
+  margin: auto 15px;
+  color: black;
+  transition: 0.5s;
+}
+
+@keyframes socialMedia {
+    0%   {color: black}
+    25%  {color: green}
+    50% {color: black}
+}
+
+.icon-1 {
+  animation: socialMedia 4s infinite;
+}
+
+.icon-2 {
+  animation: socialMedia 4s 1s infinite;
+}
+
+.icon-3 {
+  animation: socialMedia 4s 2s infinite;
+}
+
+.icon-4 {
+  animation: socialMedia 4s 3s infinite;
+}

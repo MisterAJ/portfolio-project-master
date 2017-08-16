@@ -1,0 +1,33 @@
+///***********Mixins************
+// - Text
+// - Media Queries
+// - Flexbox
+//******************************/
+
+// Text
+@mixin text($size, $l-height: null, $weight: null, $color: null) {
+	font-size: $size;
+	line-height: $l-height;
+	font-weight: $weight;
+	color: $color;
+}
+
+// media queries
+@mixin tablet {
+  @media #{$tablet} {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media #{$desktop} {
+    @content;
+  }
+}
+
+// Flexbox
+@mixin flexed($flex, $wrap, $justify) {
+	display: $flex;
+	flex-flow: $wrap;
+	justify-content: $justify;
+}

@@ -1,0 +1,130 @@
+/****** TYPED ******/
+
+.messageContainer {
+  position: relative;
+  display: block;
+  height: 275px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  padding-left: 0px;
+  padding-right: 0px;
+  width: 90%;
+  max-width: 1060px;
+  border-radius: 5px;
+  clear: both;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -ms-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+  @include tablet {
+    float: right;
+    width: 43%;
+    height: 305px;
+    margin-top: -365px;
+    margin-right: 10px;
+    margin-bottom: 75px;
+  }
+}
+
+#title {
+  font-family: "Lucida Grande", sans-serif;
+  font-size: 1.25em;
+  text-align: center;
+  text-shadow: rgba(255, 255, 255, 0.8) 0 1px 0;
+  padding-top: 7px;
+  background-color: #f8f8f8;
+  background-image: -webkit-linear-gradient(top, #e8e8e8, #bcbbbc);
+  background-image: -moz-linear-gradient(top, #e8e8e8, #bcbbbc);
+  background-image: linear-gradient(top, #e8e8e8, #bcbbbc);
+  box-shadow: inset rgba(255, 255, 255, 0.7) 0 1px 1px;
+  border-bottom: #6a6a6a 1px solid;
+  width: 100%;
+}
+
+#window {
+  height: 100%;
+  max-height: 225px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+  color: #f0f0f0;
+  text-shadow: #000 0 1px 0;
+  font-family: "Consolas", "Courier New", "Courier", serif;
+  font-size: 1.75em;
+  line-height: 1.40em;
+  font-weight: 500;
+  text-align: left;
+  /*    overflow: hidden;*/
+  border-radius: 0 0 3px 3px;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -ms-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+  @include tablet {
+    max-height: 250px;
+  }
+}
+
+.typed-cursor {
+  opacity: 1;
+  -webkit-animation: blink 0.7s infinite;
+  -moz-animation: blink 0.7s infinite;
+  animation: blink 0.7s infinite;
+}
+
+.btn-terminal {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  width: 200px;
+  margin-left: -100px;
+  font-size: 0.9em;
+  @include tablet {
+    bottom: -65px;
+  }
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.typedMessage {
+  font-size: large;
+  padding: 25px;
+  padding-top: 15px;
+  line-height: 1.5em;
+}
+

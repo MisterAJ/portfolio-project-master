@@ -1,0 +1,28 @@
+// Radius, box-shadow
+%radBox {
+	border-radius: 2px;
+	box-shadow: 3px 3px 3px $shadow, 1px 1px 3px $whiteShadow inset;
+}
+
+// Links
+%links {
+	text-decoration: none;
+	transition: all 0.3s;
+}
+
+// Images
+%imgs {
+	display: block;
+}
+
+// Headlines
+%headlines {
+	font-family: $headings; 
+}
+
+// Nav Items
+%navItems {
+	font-family: $linkText; 
+	width: 100%;
+	padding: 15px;
+}

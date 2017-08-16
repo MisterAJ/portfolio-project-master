@@ -1,0 +1,467 @@
+body {
+    background-color: white;
+}
+
+/****** NAVBAR ******/
+.main_name {
+    font-family: 'Merienda', cursive;
+}
+
+.navbar {
+/*    background: white;*/
+}
+
+.center-nav-container {
+  max-width: 1010px;
+}
+
+/****** HEADER ******/
+.header {
+  width: 100%;
+  max-width: 1060px;
+  color: white;
+  padding-bottom: 25px;
+  margin: auto;
+}
+
+@media screen and (min-width: 800px) {
+  .header {
+/*
+    background-image: url("../img/notebook.jpg");
+    background-size: cover;
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+*/
+    padding-top: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-bottom: 50px;
+  }
+}
+
+.header a {
+    color: whitesmoke;
+}
+
+
+.header-container {
+  
+}
+
+@media screen and (min-width: 800px) {
+  .header-container {
+    position: relative;
+    min-height: 350px;
+    width: 100%;
+    max-width: 1060px;
+    margin: 25px auto 50px;
+    padding-bottom: 25px;
+    background: inherit;
+    border-radius: 5px; 
+/*    overflow: hidden; */
+  }
+  
+  .frosted-wrap {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: inherit;
+    box-shadow: inset 0 0 0 3000px rgba(255,255,255,0.30);
+    filter: blur(10px);
+  }
+}
+
+.img-responsive {
+    border-radius: 5%;
+}
+
+.intro {
+  margin: auto;
+  text-align: center;
+}
+
+.intro h1 {
+  color: rgba(50,50,50,0.9);
+  margin: 12px auto;
+  font-family: 'Playfair Display', serif;
+}
+
+@media screen and (min-width: 800px) {
+  .intro {
+/*
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+*/
+    text-align: left;
+    max-width: 100%;
+  }
+  
+  .intro h1 {
+    margin-top: 20px;
+/*    margin-left: 50px;*/
+    font-size: 3.5em;
+    color: rgba(0,0,0,0.7);
+  }
+  
+  .intro p {
+    position: absolute;
+    top: 210px;
+    left: 190px;
+    font-size: 1.75em;
+    color: rgba(50,50,50,0.7);
+    transform: rotate(90deg);
+  }
+}
+
+
+
+.profile_pic {
+    width: 100px;
+    margin: 25px auto auto;
+    border-radius: 50%;
+    -webkit-filter: sepia(0%); /* Safari 6.0 - 9.0 */
+    filter: sepia(0%);
+    transition: 0.5s ease-in;
+  /*  box-shadow: rgba(0, 0, 0, 0.8) 0 20px 70px;*/
+}
+
+.profile_pic:hover {
+    -webkit-filter: sepia(50%); /* Safari 6.0 - 9.0 */
+    filter: sepia(50%);
+    transition: 0.5s ease-in;
+    box-shadow: 1px 1px black;
+}
+
+@media screen and (min-width: 800px) {
+  .profile_pic {
+    position: absolute;
+    top: 75px;
+    width: 250px;
+    margin-top: 20px;
+/*    box-shadow: rgba(0, 0, 0, 0.5) 0 20px 50px;*/
+  }
+}
+
+.header-logo-container {
+  width: 200px;
+  height: 45px;
+  margin: auto;
+  padding: 5px;
+}
+
+.header-logo {
+  display: inline-block;
+  width:  35px;
+  height: 25px;
+  padding: 5px 20px;
+  margin: auto;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.header-logo-1 {
+    background-image: url("../img/js-logo-bw.png"); 
+}
+
+.header-logo-2 {
+    background-image: url("../img/java-logo-bw.png"); 
+}
+
+.header-logo-3 {
+    background-image: url("../img/python-logo-bw.png"); 
+}
+
+@media screen and (min-width: 800px) {
+  .header-logo-container {
+    position: absolute;
+    bottom: -50px;
+    left: 20px;
+    width: 325px;
+  }
+  
+  .header-logo {
+    width:  50px;
+    height: 50px;
+    padding: 5px 45px;
+  }
+}
+
+
+/****** TYPED ******/
+
+.messageContainer {
+    position: relative;
+    display: block;
+    height: 275px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-left: 0px;
+    padding-right: 0px;
+/*    border: 5px solid lightgrey;*/
+    width: 90%;
+    max-width: 1060px;
+    border-radius: 5px;
+/*    box-shadow: rgba(0, 0, 0, 0.8) 0 20px 70px;*/
+    clear: both;
+/*    overflow: hidden;*/
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -ms-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+}
+
+@media screen and (min-width: 800px) {
+  .messageContainer {
+    float: right;
+    width: 45%;
+    height: 305px;
+    margin-top: -360px;
+    margin-right: 25px;
+    margin-bottom: 75px;
+    
+    
+/*    box-shadow: rgba(0, 0, 0, 0.5) 0 20px 50px;*/
+  }
+}
+
+#title {
+    font-family: "Lucida Grande", sans-serif;
+    font-size: 1.25em;
+    text-align: center;
+    text-shadow: rgba(255, 255, 255, 0.8) 0 1px 0;
+    padding-top: 7px;
+    background-color: #f8f8f8;
+    background-image: -webkit-linear-gradient(top, #e8e8e8, #bcbbbc);
+    background-image: -moz-linear-gradient(top, #e8e8e8, #bcbbbc);
+    background-image: linear-gradient(top, #e8e8e8, #bcbbbc);
+    box-shadow: inset rgba(255, 255, 255, 0.7) 0 1px 1px;
+    border-bottom: #6a6a6a 1px solid;
+    width: 100%;
+}
+
+#window {
+    height: 100%;
+    max-height: 225px;
+    background-color: rgba(0, 0, 0, 0.85);
+    color: #f0f0f0;
+    text-shadow: #000 0 1px 0;
+    font-family: "Consolas", "Courier New", "Courier", serif;
+    font-size: 1.75em;
+    line-height: 1.40em;
+    font-weight: 500;
+    text-align: left;
+/*    overflow: hidden;*/
+    border-radius: 0 0 3px 3px;
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -ms-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+    width: 100%;
+}
+
+@media screen and (min-width: 800px) {
+  #window {
+    max-height: 250px;
+  }
+}
+
+.typed-cursor {
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+
+.btn-terminal {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  width: 200px;
+  margin-left: -100px;
+  font-size: 0.9em;
+}
+
+@media screen and (min-width: 800px) {
+  .btn-terminal {
+    bottom: -65px;
+  }
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.typedMessage {
+    font-size: large;
+    padding: 25px;
+    padding-top: 15px;
+    line-height: 1.5em;
+}
+
+
+
+
+
+
+/******PROJECT SECTION******/
+
+.proj-1 {
+    background-color: green;
+    color: white;
+}
+
+
+
+/****** PROJECT HOVER EFFECT ******/
+
+.quote_image {
+    transition: .5s ease-in;
+
+}
+
+.quote_image:hover {
+    background-color: #0f0f0f;
+    transition: .5s ease-in;
+
+}
+
+
+
+
+/****** FOOTER ******/
+
+.footer-basic {
+    background: rgba(210, 217, 233, 0.54);
+}
+
+
+/****** ROBERT CSS ******/
+
+.proj-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.proj {
+    position: relative;
+    width: 100%;
+    max-width: 275px;
+    min-height: 186px;
+    margin: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.proj img, .proj .overlay {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+.proj img, .proj #quote-box {
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+
+.proj .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    color: rgba(25, 25, 25, 0.9);
+    padding-top: 50px;
+    background: radial-gradient(rgba(250, 250, 250, 0.5), rgba(250, 250, 250, 0.9));
+    border: 3px solid transparent;
+    opacity: 0;
+    -webkit-transition: 0.9s;
+    transition: 0.9s;
+}
+
+.proj:hover .overlay {
+    opacity: 1;
+    border-color: black;
+}
+
+.proj:hover img, .proj:hover #quote-box {
+    filter: blur(3px);
+}
+
+
+
+.overlay a {
+    outline: none;
+    text-decoration: none;
+    display: block;
+    font-size: 1em;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.9);
+    width: 90%;
+    margin: 15px auto;
+    padding: 10px;
+    background: radial-gradient(rgba(25, 25, 25, 0.5), rgba(25, 25, 25, 0.9));
+    border: 3px solid transparent;
+    border-radius: 5px;
+    -webkit-transition: all 0.9s;
+    transition: all 0.9s;
+}
+
+.overlay a:hover {
+    color: rgba(55, 55, 55, 0.9);
+    background: rgba(250, 250, 250, 0.9);
+    border-color: black;
+    -webkit-transition: all 0.9s;
+    transition: all 0.9s;
+}
+
+@media screen and (min-width: 800px) {
+  .proj {
+    width: calc(33% - 20px);
+    min-width: 215px;
+    max-width: 500px;
+  }
+}
+
+

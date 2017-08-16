@@ -1,0 +1,20 @@
+/****** NAVBAR ******/
+.main_name {
+    font-family: 'Merienda', cursive;
+}
+
+.navbar-default {
+  @include tablet {
+    padding-left: 20px;
+  padding-right: 20px;
+  }
+}
+
+.center-nav-container {
+  max-width: 1010px;
+}
+
+.navbar-brand img {
+  width: 40px;
+  margin-top: -10px;
+}

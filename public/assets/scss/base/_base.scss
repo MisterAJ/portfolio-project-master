@@ -1,0 +1,29 @@
+/*************************
+My base styles for AJ Portfolio
+Robert Manolis
+Milwaukie, OR - 4/6/2017
+*************************/
+
+/********Base/Resets**********/
+* {
+	box-sizing: border-box;
+}
+
+ul {
+	list-style: none;
+	padding-left: 0;
+}
+/******************************/
+
+body {
+    background-color: white;
+}
+
+section {
+  text-align: center;
+  border-top: 3px solid black;
+  width: 90%;
+  max-width: 990px;
+  margin: 25px auto;
+  padding-bottom: 15px;
+}

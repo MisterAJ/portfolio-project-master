@@ -1,0 +1,137 @@
+//@mixin flexed($flex, $wrap, $justify)
+.grid__row {
+	@include tablet {
+		@include flexed(flex, row wrap, space-around);
+	}
+}
+	
+@for $i from 1 through 12 {
+	.grid__col--#{$i} {	
+		margin: 25px 10px;
+		padding: 15px;
+		overflow: hidden;
+    border-radius: 5px;
+    border: 3px solid black;
+		@include tablet { 
+			flex: #{$i};
+			max-width: calc((#{$i}/12)*100%);
+		}
+	}	
+}     
+
+$myMap: (
+	1: $turquoise,
+	2: $black,
+	3: $navy,
+	4: $blue,
+	5: $royal,
+	6: $dodger,
+	7: $aqua,
+	8: $sky,
+	9: $indigo,
+	10: $darkTurq,
+	11: $blue,
+	12: $aqua
+);
+
+@each $num, $color in $myMap {
+	.grid__col--#{$num}.theme__poly {
+		background: #{$color};
+		@extend %radBox;
+	}
+}
+	
+.centered {
+	text-align: center;
+}
+
+.bio-section-heading {
+  font-family: 'Playfair Display', serif;
+  margin: 15px auto;
+}
+
+.bio-section-heading-sub {
+  width: 100%;
+  margin-top: 25px;
+  padding-top: 15px;
+  border-top: 3px solid black;
+}
+
+.greeting p {
+  @include tablet {
+    text-align: left;
+  }
+}
+
+.magic img {
+  width: 100%;
+  border: 3px solid black;
+  border-radius: 5px;
+}
+
+.black {
+  display: none;
+  @include tablet {
+    display: inline-block;
+    background: $nearBlack;
+  }
+}
+
+.medium-grey {
+  display: none;
+  @include tablet {
+    display: inline-block;
+    background: $mediumGrey;
+  }
+}
+
+.light-grey {
+  display: none;
+  @include tablet {
+    display: inline-block;
+    background: $lightGrey;
+  }
+}
+
+.skill-col {
+  display: inline-block;
+  vertical-align: top;
+  max-width: 200px;
+  height: 300px;
+  padding: 0;
+  background: radial-gradient(rgba(50, 50, 50, 0.1), rgba(50, 50, 50, 0.3));
+}
+
+$skillMap: (
+	js: rgba(255,0,0,0.7),
+	java: rgba(0,128,0,0.7),
+	python: rgba(75,0,130,0.7),
+	fe: rgba(0,0,255,0.7),
+	os: rgba(0,0,0,0.7)
+);
+
+@each $name, $color in $skillMap {
+	.skill-heading-#{$name} {
+		background: #{$color};
+    color: white;
+    width: 100%;
+    margin: 0;
+    margin-bottom: 15px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    border-bottom: 3px solid black;
+    box-shadow: 0px 3px 5px rgba(50,50,50,0.7), -1px -1px 3px rgba(255,255,255,0.7) inset, 1px 1px 3px rgba(5,5,5,0.7) inset;
+	}
+}
+
+.skill-col ul {
+  text-align: left;
+  list-style: disc;
+  padding-left: 25px;
+  padding-right: 5px;
+}
+
+.cert-col {
+  background: radial-gradient(rgba(50, 50, 50, 0.1), rgba(50, 50, 50, 0.3));
+}
+

@@ -1,0 +1,74 @@
+///********variables************
+// - Colors
+// - Breakpoints
+// - font Stuff
+//******************************/
+
+// Descriptive color variables
+$nearBlack       : rgba(50,50,50,0.8);
+$mediumGrey      : rgba(200,200,200,0.7);
+$lightGrey       : rgba(225,225,225,0.9);
+$nearWhite       : rgba(245,245,245,0.9);
+
+$gossamer        : rgba(50,50,50,0.3);
+$whiteGossamer   : rgba(250,250,250,0.3);
+
+//opaque colors
+$black					 : rgba(0,0,0,0.7);
+$dodger					 : rgba(30,144,255,0.7);
+$navy						 : rgba(0,0,128,0.7);
+$aqua						 : rgba(0,255,255,0.7);
+$blue						 : rgba(0,0,255,0.7);
+$sky						 : rgba(0,191,255,0.7);
+$royal					 : rgba(65,105,225,0.7);
+$indigo					 : rgba(75,0,130,0.7);
+$magenta				 : rgba(255,0,255,0.7);
+$pink						 : rgba(255,20,147,0.7);
+$red						 : rgba(255,0,0,0.7);
+$orangered			 : rgba(255,69,0,0.7);
+$yellow					 : rgba(255,255,0,0.7);
+
+$turquoise			 : rgba(68,183,186,0.7);
+$darkTurq				 : rgba(18,133,136,0.7);
+
+
+// Funcitonal color variables
+$color-link                  : $mediumGrey;
+$color-linkHover             : $nearWhite;
+$background-linkHover  			 : $turquoise;
+
+$color-p   									 : $nearBlack;
+$color-heading   						 : $nearBlack;
+
+$background-header    		   : $lightGrey;
+$background-headerLink 			 : $nearWhite;
+$background-avatar   			   : $mediumGrey;
+
+$background-contact   		   : $nearWhite;
+$background-footer    		   : $nearWhite;
+
+$color-hr                    : $mediumGrey;
+
+$shadow                      : $gossamer;
+$whiteShadow                 : $whiteGossamer;
+
+
+// Media Query Breakpoints
+$tablet    : '(min-width: 768px)';
+$desktop   : '(min-width: 1024px)';
+
+
+/********FONTS************
+font-family: 'Roboto', sans-serif; - 300, 700
+font-family: 'Macondo', cursive; - 400
+font-family: 'Raleway', cursive; - 400
+*************************/
+// Descriptive Font Variables
+$stack-roboto     : 'Roboto', sans-serif;
+$stack-barrio    : 'Barrio', cursive;
+$stack-raleway    : 'Raleway', cursive;
+
+// Functional Font Variables
+$headings    : $stack-raleway;
+$plainText   : $stack-roboto;
+$linkText   : $stack-barrio;

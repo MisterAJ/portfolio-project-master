@@ -4,39 +4,30 @@ html
     include includes/_head
     link(href='https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,700,700italic', rel='stylesheet', type='text/css')
     body
-        .projects-clean
-            .container
+        include includes/_new-nav
+        header.header.projects-clean
+            .container.header-container
+                
                 .intro
                     img.img-responsive.profile_pic(src='assets/img/profile_pic.jpg')
-        .container.messageContainer
-            #title
-                p Terminal
-            #window
-                .typedMessage
-        .proj-wrapper
-            .proj.proj-1
-                #quote-box
-                    p.quote You can do anything but not everything
-                    p.source
-                        | David Allen
-                        span.citation Making It All Work
-                        span.year 2009
-                span.overlay
-                    p Quote Generator
-                    a(href='https://github.com/MisterAJ/AngularJS-Recipe-Site' target="_blank") Source Code
-
-            .proj.proj-2
-                img(src='assets/img/food.jpeg', alt='recipe')
-                span.overlay
-                    p AngularJS Recipe App
-                    a(href='http://www.ajlongstreet.com:5000/#!/' target="_blank") View Project
-                    a(href='https://github.com/MisterAJ/AngularJS-Recipe-Site' target="_blank") Source Code
-            .proj.proj-3
-                img(src='assets/img/books.jpg', alt='Loft')
-                span.overlay
-                    p Library Manager
-                    a(href='./library' target="_blank") View Project
-                    a(href='https://github.com/MisterAJ/Express-Sequelize-Library-Manager' target="_blank") Source Code
+                    h1 A.J. Longstreet
+                    p Full Stack Developer
+                    .header-logo-container
+                      .header-logo.header-logo-1
+                      .header-logo.header-logo-2
+                      .header-logo.header-logo-3
+                      
+            .container.messageContainer
+                #title
+                    p Terminal
+                #window
+                    .typedMessage
+                    a.btn.btn-success.btn-terminal(href="#contact") Get in Touch
+                    
+        include includes/_projs
+        include includes/_bio
+        include includes/_contact
+        
         script(src='assets/js/jquery.min.js')
         script(src='assets/js/featherlight.min.js')
         script(src='assets/js/typed.js')
@@ -44,4 +35,4 @@ html
         script(src='assets/js/mainPage.js')
 
 
-        include includes/_footer
+        
